@@ -6,6 +6,7 @@ import InputLabel from '@material-ui/core/InputLabel';
 import Button from '@material-ui/core/Button';
 import FormHelperText from '@material-ui/core/FormHelperText';
 import Card from '../components/Card';
+import Container from '@material-ui/core/Container';
 
 function HomePage(props) {
 
@@ -80,7 +81,7 @@ function HomePage(props) {
     
 
     return (
-        <div>
+        <Container maxWidth="md">
             <Box m={1} display='flex' justifyContent="center">
                 <img style={{imageRendering: 'crisp-edges'}} src="/Star_Wars_Yellow_Logo.svg" alt="Logo" />
             </Box>
@@ -126,7 +127,7 @@ function HomePage(props) {
                 
                 
                 </Box>   
-        </div>
+        </Container>
     )
 }
 
